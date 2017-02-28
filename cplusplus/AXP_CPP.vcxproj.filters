@@ -1,0 +1,983 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\xplatform">
+      <UniqueIdentifier>{b55750bb-6d73-4429-8981-ff12bd109609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\xplatform\include">
+      <UniqueIdentifier>{d2148abf-9c53-4875-a27a-e7c72c607263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\xplatform">
+      <UniqueIdentifier>{cae7cb9b-1138-4b14-a516-d9b9815f54f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\xplatform\src">
+      <UniqueIdentifier>{b610b90b-0c00-4094-8ec9-bb4dffbe8621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\xplatform\include\stl">
+      <UniqueIdentifier>{48df5256-96fe-4214-9f86-a6cc64f7cfa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\libc">
+      <UniqueIdentifier>{089adf49-8040-4ece-8345-ec17bc7a843f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\libc\src">
+      <UniqueIdentifier>{caa7eb07-925f-4f7c-a987-9d49e3a5c695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\libc\src\Common">
+      <UniqueIdentifier>{947e1ea9-a12b-4cf7-8dc9-4bf5a6f428c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\libc\src\Network">
+      <UniqueIdentifier>{0f82f247-cbaa-4352-8fef-7e547df011b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\libc">
+      <UniqueIdentifier>{3261cce6-06bb-4c67-8c19-99b5d6ffb5d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\libc\include">
+      <UniqueIdentifier>{c2f2d524-9732-4408-bc2d-326fd27dcea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\libc\include\Common">
+      <UniqueIdentifier>{4387fc75-e2f8-4af1-bc05-5b7058db9662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\libc\include\Network">
+      <UniqueIdentifier>{2e479b51-3da3-4788-80c3-a5adb5d19f16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ThirdParty">
+      <UniqueIdentifier>{2e72f00f-5890-4787-9623-fda4dfac48fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ThirdParty\IConv">
+      <UniqueIdentifier>{9618ab78-f69b-44dd-9500-e7f227fa9e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ThirdParty\IConv\Libiconv">
+      <UniqueIdentifier>{9d018f43-5f13-4da7-b9a4-516651adbeca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\xplatform\include\ipc">
+      <UniqueIdentifier>{9925b573-fbc0-4392-908a-6ed64b7b0752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\libc\include\MessageQueue">
+      <UniqueIdentifier>{6a5369d6-d8f6-46fe-86e9-0075950aa5b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\libc\src\MessageQueue">
+      <UniqueIdentifier>{0b3cccce-1189-4d5b-b124-c3476617769e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libc\include\Common\BaseWorker.h">
+      <Filter>头文件\libc\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\include\Common\Tracker.h">
+      <Filter>头文件\libc\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\include\MessageQueue\Bundle.h">
+      <Filter>头文件\libc\include\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\include\MessageQueue\Handler.h">
+      <Filter>头文件\libc\include\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\include\MessageQueue\Looper.h">
+      <Filter>头文件\libc\include\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\include\MessageQueue\Message.h">
+      <Filter>头文件\libc\include\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\include\MessageQueue\MessageQueue.h">
+      <Filter>头文件\libc\include\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\include\Network\HttpServer.h">
+      <Filter>头文件\libc\include\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_aix.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_aix_sysaix.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_dos.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_extra.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_osf1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_osf1_sysosf1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_sysaix.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_syshpux.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_sysosf1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases_syssolaris.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\aliases2.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\armscii_8.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ascii.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\atarist.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\big5.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\big5_2003.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\big5hkscs1999.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\big5hkscs2001.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\big5hkscs2004.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\big5hkscs2008.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\c99.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_aix.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_aix_sysaix.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_dos.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_extra.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_local.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_local_sysaix.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_local_syshpux.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_local_sysosf1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_local_syssolaris.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_osf1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_osf1_sysosf1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_sysaix.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_syshpux.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_sysosf1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\canonical_syssolaris.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ces_big5.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ces_gbk.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cjk_variants.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_2.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_3.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_4.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_4a.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_4b.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_5.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_6.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_7.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_15.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cns11643_inv.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\Config.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\converters.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp437.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp737.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp775.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp850.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp852.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp853.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp855.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp856.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp857.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp858.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp860.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp861.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp862.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp863.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp864.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp865.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp866.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp869.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp874.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp922.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp932.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp932ext.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp936.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp936ext.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp943.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp949.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp950.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp950ext.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1046.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1124.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1125.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1129.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1131.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1133.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1161.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1162.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1163.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1250.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1251.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1252.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1253.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1254.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1255.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1256.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1257.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\cp1258.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\dec_hanyu.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\dec_kanji.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\euc_cn.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\euc_jisx0213.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\euc_jp.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\euc_kr.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\euc_tw.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\flags.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\flushwc.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gb2312.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gb12345.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gb12345ext.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gb18030.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gb18030ext.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gb18030uni.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gbk.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gbkext_inv.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gbkext1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\gbkext2.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\georgian_academy.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\georgian_ps.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\hkscs1999.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\hkscs2001.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\hkscs2004.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\hkscs2008.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\hp_roman8.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\hz.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\IConv.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iconv_open1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iconv_open2.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso646_cn.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso646_jp.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso2022_cn.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso2022_cnext.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso2022_jp.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso2022_jp1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso2022_jp2.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso2022_jp3.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso2022_kr.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_2.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_3.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_4.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_5.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_6.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_7.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_8.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_9.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_10.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_11.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_13.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_14.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_15.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\iso8859_16.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\isoir165.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\isoir165ext.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\java.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\jisx0201.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\jisx0208.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\jisx0212.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\jisx0213.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\johab.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\johab_hangul.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\koi8_r.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\koi8_ru.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\koi8_t.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\koi8_u.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ksc5601.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\localcharset.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\loop_unicode.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\loop_wchar.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\loops.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_arabic.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_centraleurope.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_croatian.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_cyrillic.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_greek.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_hebrew.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_iceland.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_roman.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_romania.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_thai.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_turkish.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mac_ukraine.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\mulelao.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\nextstep.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\pt154.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\relocatable.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\riscos1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\rk1048.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\shift_jisx0213.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\sjis.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\tcvn.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\tds565.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\tis620.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\translit.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs2.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs2be.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs2internal.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs2le.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs2swapped.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs4.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs4be.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs4internal.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs4le.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\ucs4swapped.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\uhc_1.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\uhc_2.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\utf7.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\utf8.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\utf16.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\utf16be.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\utf16le.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\utf32.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\utf32be.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\utf32le.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\vietcomb.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\IConv\Libiconv\viscii.h">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\ipc\IPCEvent.h">
+      <Filter>头文件\xplatform\include\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\ipc\IPCFIFOBuffer.h">
+      <Filter>头文件\xplatform\include\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\ipc\IPCMutex.h">
+      <Filter>头文件\xplatform\include\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\ipc\IPCStreamBuffer.h">
+      <Filter>头文件\xplatform\include\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\stl\equalToFunction.h">
+      <Filter>头文件\xplatform\include\stl</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\stl\hashFunction.h">
+      <Filter>头文件\xplatform\include\stl</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\stl\hashTable.h">
+      <Filter>头文件\xplatform\include\stl</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\stl\pair.h">
+      <Filter>头文件\xplatform\include\stl</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\stl\tree.h">
+      <Filter>头文件\xplatform\include\stl</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\aresult.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\astring.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\atime.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\atom.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\bitBuffer.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\byteOrder.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\coretype.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\define.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\event.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\keyValueList.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\limits.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\linkedlist.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\list.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\memoryStream.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\mutex.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\nullable.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\object.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\queue.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\refBase.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\streambuf.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\stringBuffer.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\thread.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\tree.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\type.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\uri.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\vbuf.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\parcel.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="xplatform\include\parcelable.h">
+      <Filter>头文件\xplatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\include\Common\ClassLoader.h">
+      <Filter>头文件\libc\include\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ThirdParty\IConv\Libiconv\genaliases.c">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\IConv\Libiconv\genaliases2.c">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\IConv\Libiconv\genflags.c">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\IConv\Libiconv\gentranslit.c">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\IConv\Libiconv\iconv.c">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\IConv\Libiconv\localcharset.c">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\IConv\Libiconv\relocatable.c">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\src\Common\BaseWorker.cpp">
+      <Filter>源文件\libc\src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\src\Common\Tracker.cpp">
+      <Filter>源文件\libc\src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\src\MessageQueue\Bundle.cpp">
+      <Filter>源文件\libc\src\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\src\MessageQueue\Handler.cpp">
+      <Filter>源文件\libc\src\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\src\MessageQueue\Looper.cpp">
+      <Filter>源文件\libc\src\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\src\MessageQueue\Message.cpp">
+      <Filter>源文件\libc\src\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\src\MessageQueue\MessageQueue.cpp">
+      <Filter>源文件\libc\src\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\src\Network\HttpServer.cpp">
+      <Filter>源文件\libc\src\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="xplatform\src\astring.cpp">
+      <Filter>源文件\xplatform\src</Filter>
+    </ClCompile>
+    <ClCompile Include="xplatform\src\atime.cpp">
+      <Filter>源文件\xplatform\src</Filter>
+    </ClCompile>
+    <ClCompile Include="xplatform\src\atom.cpp">
+      <Filter>源文件\xplatform\src</Filter>
+    </ClCompile>
+    <ClCompile Include="xplatform\src\event.cpp">
+      <Filter>源文件\xplatform\src</Filter>
+    </ClCompile>
+    <ClCompile Include="xplatform\src\mutex.cpp">
+      <Filter>源文件\xplatform\src</Filter>
+    </ClCompile>
+    <ClCompile Include="xplatform\src\thread.cpp">
+      <Filter>源文件\xplatform\src</Filter>
+    </ClCompile>
+    <ClCompile Include="xplatform\src\parcel.cpp">
+      <Filter>源文件\xplatform\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\src\Common\ClassLoader.cpp">
+      <Filter>源文件\libc\src\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ThirdParty\IConv\Libiconv\aliases.gperf">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\aliases_sysaix.gperf">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\aliases_syshpux.gperf">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\aliases_sysosf1.gperf">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\aliases_syssolaris.gperf">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\encodings.def">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\encodings_aix.def">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\encodings_dos.def">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\encodings_extra.def">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\encodings_local.def">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\encodings_osf1.def">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+    <None Include="ThirdParty\IConv\Libiconv\translit.def">
+      <Filter>头文件\ThirdParty\IConv\Libiconv</Filter>
+    </None>
+  </ItemGroup>
+</Project>

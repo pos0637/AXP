@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AC101B99-709B-498F-BEBE-AB5FFD95DBA6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AXP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>941b53b6-77b6-c44a-b9fc-434cf163069a++505</key>
+		<string>https://110.90.126.193:3690/svn/AXP/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>objective-c/AXP.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>941b53b6-77b6-c44a-b9fc-434cf163069a++505</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>941b53b6-77b6-c44a-b9fc-434cf163069a++505</key>
+		<string>https://110.90.126.193:3690/svn/AXP</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://110.90.126.193:3690/svn/AXP/trunk/objective-c/AXP.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>941b53b6-77b6-c44a-b9fc-434cf163069a++505</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>941b53b6-77b6-c44a-b9fc-434cf163069a++505</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AXP</string>
+		</dict>
+	</array>
+</dict>
+</plist>
